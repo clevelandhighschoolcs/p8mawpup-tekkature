@@ -1,1 +1,1 @@
-# webscraping code Nathan Reilly
+#this is a repository I, Nathan Reilly, made to submit my webscraping code please view setup_tutorial.txt to see how.
