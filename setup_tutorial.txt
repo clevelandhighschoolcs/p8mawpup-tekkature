@@ -1,6 +1,6 @@
 #to setup my web scraping code
 first you need to install notepad++
-secondly install python version 2.7.14 
+secondly install python version 2.7.14 (https://www.python.org/downloads/)
 then setup your cmd to run virtual environments using pip (look this up or use the assignment:http://moodle.clevelandhighschool.org/mod/assign/view.php?id=4132)
 once you have a virtual environment running in your cmd and notepad++ up with an new document,
 copy and paste the following code into your document:
