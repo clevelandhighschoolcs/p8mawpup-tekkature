@@ -1,65 +1,34 @@
-#this is a repository I, Nathan Reilly, made to submit my webscraping code please view setup_tutorial.txt to see how.
+# Web Scraper
+### By: Nathan Reilly
+This was made for my IB Computer Science Course
 
-#TO VIEW MY FLOWCHART SEE: MY FLOWCHART.png in repository 
+![Flowchart](https://github.com/clevelandhighschoolcs/p8mawpup-tekkature/blob/master/images/my%20flowchart.PNG)
 
-#to setup my web scraping code
-first you need to install notepad++
-secondly install python version 2.7.14 (https://www.python.org/downloads/)
-then setup your cmd to run virtual environments using pip (look this up or use the assignment:http://moodle.clevelandhighschool.org/mod/assign/view.php?id=4132)
-once you have a virtual environment running in your cmd and notepad++ up with an new document,
-copy and paste the following code into your document:
+# To setup my web scraping code you will need
 
-# coding: utf-8
-# import libraries
-import time
-import urllib2
-from bs4 import BeautifulSoup
+- [ ] install notepad++ (if not already installed)
+- [ ] install [python version 2.7.14](https://www.python.org/downloads/) (if not already installed)
+- [ ] setup your virtual enviroment
+- [ ] Download the code
 
-def main():
-  while True:
-    quote_page = 'https://tekka332510898.wordpress.com/'
-    page = urllib2.urlopen(quote_page)
-    soup = BeautifulSoup(page, 'html.parser')
-    name_box = soup.find('h1', attrs={'class': 'entry-title'})
-    name = name_box.text
-    print name
-    price_box = soup.find('div', attrs={'class':'entry-content'})
-    price = price_box.text
-    print price  
-    time.sleep(20)
-  
-if __name__ == "__main__":
-  main()
+Once you have a virtual environment ready move the [webscraper program python.py](https://github.com/clevelandhighschoolcs/p8mawpup-tekkature/blob/master/webscraping%20program%20python.py) into it.
 
-make sure to save the file with the name of ur choice but change the file type to a .py file
-your almost done!
-now all u gotta do is type in the cmd: python (insert file name).py 
-it should collect data about the text located at the cite: https://tekka332510898.wordpress.com/
-it will search for the data every 20 seconds.
-this code can be reused for any website with only a few changes:
+# Modifying
+The program by default is checking [my blog](https://tekka332510898.wordpress.com/) for change but you can change that by opening the web scraper in notepad++ and changing the url in this line
 
-here's an example of what I mean:
+```Python
+  quote_page = 'https://tekka332510898.wordpress.com/'
+```
 
-# coding: utf-8
-# import libraries
-import time
-import urllib2
-from bs4 import BeautifulSoup
+It will automatically check the website for change every 20 seconds to change how often it checks change the number here
 
-def main():
-  while True:
-    quote_page = 'Your url here'
-    page = urllib2.urlopen(quote_page)
-    soup = BeautifulSoup(page, 'html.parser')
-    name_box = soup.find('what the section is (use inspect)', attrs={'class': 'what the class is (use inspect)'})
-    name = name_box.text
-    print name
-    price_box = soup.find('what the section is (use inspect)', attrs={'class':'what the class is (use inspect)'})
-    price = price_box.text
-    print price  
-    time.sleep(number of seconds between checks)
-  
-if __name__ == "__main__":
-  main()
+```Python
+  time.sleep(20)
+```
 
+# Running the code
+Now all you gotta do is type in the virtual enviroment:
 
+```CMD
+  python webscraping program python.py 
+```
