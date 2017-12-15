@@ -11,7 +11,7 @@ This was made for my IB Computer Science Course
 - [ ] setup your virtual enviroment
 - [ ] Download the code
 
-Once you have a virtual environment ready move the [webscraper program python.py](https://github.com/clevelandhighschoolcs/p8mawpup-tekkature/blob/master/webscraping%20program%20python.py) into it.
+Once you have a virtual environment ready move the [pythonwebscraper.py](https://github.com/clevelandhighschoolcs/p8mawpup-tekkature/blob/master/pythonwebscraper.py) into it.
 
 # Modifying
 The program by default is checking [my blog](https://tekka332510898.wordpress.com/) for change but you can change that by opening the web scraper in notepad++ and changing the url in this line
@@ -30,5 +30,5 @@ It will automatically check the website for change every 20 seconds to change ho
 Now all you gotta do is type in the virtual enviroment:
 
 ```CMD
-  python webscraping program python.py 
+  python pythonwebscraper.py 
 ```
