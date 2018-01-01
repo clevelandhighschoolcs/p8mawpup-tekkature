@@ -36,3 +36,5 @@ Now all you gotta do is type in the virtual enviroment:
 ```CMD
   python pythonwebscraper.py 
 ```
+
+# If you are curoius in getting these alerts by text visit my webscrapertwilio.py branch of the project! (if u see any problems with code feel free to submit a pull request)
